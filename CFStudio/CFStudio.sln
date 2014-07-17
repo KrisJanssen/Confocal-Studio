@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFStudio.Desktop", "CFStudio.Desktop\CFStudio.Desktop.csproj", "{827FBC63-FA30-4C94-928A-B4943CFF4BE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFStudio.Presentation", "CFStudio.Desktop\CFStudio.Presentation.csproj", "{827FBC63-FA30-4C94-928A-B4943CFF4BE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2C28785C-54E8-49AF-8B6F-6AD2E386E752}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2C2878
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModule", "TestModule\TestModule.csproj", "{CD977EF8-B24E-4EB9-9A79-91886520BA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFStudio.CoreModule", "CFStudio.CoreModule\CFStudio.CoreModule.csproj", "{6779A820-4B3E-4A1D-BB66-10CB3A38A566}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation Layer", "1. Presentation Layer", "{FDB770FA-877F-423A-8316-E7ACF63AADB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 Controls", "1.1 Controls", "{4E237BEB-6C80-48CD-A42B-2D99C21C0977}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 Modules", "1.2 Modules", "{4CC8FC8C-84F2-4500-A35E-CF456D930DF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Service Layer", "2. Service Layer", "{328097CF-EC0D-49D5-A0B9-F5FA3F40A1C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Persistence Layer", "3. Persistence Layer", "{64AA8E60-4E1C-45BA-96DE-010FB95A817E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain Layer", "4. Domain Layer", "{382C811D-B495-4015-BE1B-0160E84308CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Infrastructure Layer", "5. Infrastructure Layer", "{20141C89-D05E-4CD3-82BF-8334033B540B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFStudio.Presentation.Common", "CFStudio.Presentation.Common\CFStudio.Presentation.Common.csproj", "{532A2DB9-D023-4006-ADE6-45C2BA0711F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFStudio.Infrastructure", "CFStudio.Infrastructure\CFStudio.Infrastructure.csproj", "{B184E8F8-A507-4C3D-B580-184E3776A95C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +48,27 @@ Global
 		{CD977EF8-B24E-4EB9-9A79-91886520BA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD977EF8-B24E-4EB9-9A79-91886520BA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD977EF8-B24E-4EB9-9A79-91886520BA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6779A820-4B3E-4A1D-BB66-10CB3A38A566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6779A820-4B3E-4A1D-BB66-10CB3A38A566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6779A820-4B3E-4A1D-BB66-10CB3A38A566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6779A820-4B3E-4A1D-BB66-10CB3A38A566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532A2DB9-D023-4006-ADE6-45C2BA0711F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532A2DB9-D023-4006-ADE6-45C2BA0711F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532A2DB9-D023-4006-ADE6-45C2BA0711F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532A2DB9-D023-4006-ADE6-45C2BA0711F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B184E8F8-A507-4C3D-B580-184E3776A95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B184E8F8-A507-4C3D-B580-184E3776A95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B184E8F8-A507-4C3D-B580-184E3776A95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B184E8F8-A507-4C3D-B580-184E3776A95C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{827FBC63-FA30-4C94-928A-B4943CFF4BE1} = {FDB770FA-877F-423A-8316-E7ACF63AADB7}
+		{4E237BEB-6C80-48CD-A42B-2D99C21C0977} = {FDB770FA-877F-423A-8316-E7ACF63AADB7}
+		{4CC8FC8C-84F2-4500-A35E-CF456D930DF1} = {FDB770FA-877F-423A-8316-E7ACF63AADB7}
+		{532A2DB9-D023-4006-ADE6-45C2BA0711F7} = {FDB770FA-877F-423A-8316-E7ACF63AADB7}
+		{B184E8F8-A507-4C3D-B580-184E3776A95C} = {20141C89-D05E-4CD3-82BF-8334033B540B}
 	EndGlobalSection
 EndGlobal
